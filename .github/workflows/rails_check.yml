@@ -50,4 +50,4 @@ jobs:
       - name: Lint Ruby files
         run: |
           bundle exec rubocop --parallel
-          bundle exec rubycritic --parallel
+          bundle exec rubycritic
