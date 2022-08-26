@@ -13,6 +13,8 @@
 git clone git@github.com:sonamtaa/rails_basic_template.git
 ```
 
+### To use in your project use this template as template or flow the steps below.
+
 #### Change the directory name for your project
 ```bash
 mv rails_basic_template your_project_name
