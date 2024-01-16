@@ -8,11 +8,8 @@ ruby '3.2.2'
 gem 'bootsnap', require: false
 gem 'pg'
 gem 'puma'
-gem 'bootsnap', require: false
-gem 'pg'
-gem 'puma'
 gem 'rack-cors'
-gem 'rails', '~> 7.0.7'
+gem 'rails', '~> 7.1.2'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
