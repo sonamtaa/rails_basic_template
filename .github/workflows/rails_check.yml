@@ -5,14 +5,21 @@
 # This workflow will install a prebuilt Ruby version, install dependencies, and
 # run tests and linters.
 name: "Rails CI Test"
-on: pull_request
+
+on:
+  pull_request:
+    branches:
+      - '*'
+  push:
+    branches:
+      - main
 
 jobs:
   test:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgres:11-alpine
+        image: postgres:14-alpine
         ports:
           - "5432:5432"
         env:
@@ -26,7 +33,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Install Ruby and gems
-        uses: ruby/setup-ruby@8f312efe1262fb463d906e9bf040319394c18d3e
+        uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
       - name: Set up database schema and run migrations
@@ -40,7 +47,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Install Ruby and gems
-        uses: ruby/setup-ruby@8f312efe1262fb463d906e9bf040319394c18d3e
+        uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
       - name: Security audit dependencies
