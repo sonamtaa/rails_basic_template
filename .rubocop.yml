@@ -18,6 +18,7 @@ AllCops:
   DisplayStyleGuide: true
   TargetRubyVersion: 3.2.2
   NewCops: enable
+  SuggestExtensions: false
 
 RSpec/MultipleMemoizedHelpers:
   Max: 20
