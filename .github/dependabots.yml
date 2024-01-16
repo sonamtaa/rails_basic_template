@@ -3,9 +3,9 @@ registries:
   ruby-example:
     type: rubygems-server
 updates:
-  - package-ecosystem: "bundler"
-    directory: "/"
+  - package-ecosystem: 'bundler'
+    directory: '/'
     registries:
       - ruby-example
     schedule:
-      interval: "daily"
+      interval: 'weekly'
