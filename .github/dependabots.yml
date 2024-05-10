@@ -8,4 +8,4 @@ updates:
     registries:
       - ruby-example
     schedule:
-      interval: 'weekly'
+      interval: 'monthly'
