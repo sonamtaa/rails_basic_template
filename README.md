@@ -4,7 +4,7 @@
 
 ## Required packages installed in your system
 
-- ruby >= 3.3.1 and rails >= 7.1.3 and bundler
+- ruby >= 3.3.4 and rails >= 7.1.3 and bundler
 - postgresql
 - Used rspec as testing framework
 - Used pg as database
